@@ -1,0 +1,13 @@
+<!-- HTML dosyanız -->
+<div class="home-container">
+  <h2>HESAP SİL</h2>
+  <form (ngSubmit)="deleteUser()">
+    <label for="musteriName">İSİM</label>
+    <input id="musteriName" [(ngModel)]="musteriName" name="musteriName" required />
+    
+    <button type="submit">SİL</button>
+    <button type="button" (click)="goBack()">GERİ DÖN</button>
+  </form>
+  
+  <p *ngIf="message">{{ message }}</p>
+</div>

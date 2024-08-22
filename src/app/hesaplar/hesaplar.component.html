@@ -1,0 +1,31 @@
+<div>
+    <h1>HESAPLAR</h1>
+
+    <div>
+        <h1>Kullanıcı Listesi</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Hesap No</th>
+              <th>İsim</th>
+              <th>Soyisim</th>
+              <th>Bakiye</th>
+              <th>Yaş</th>
+              <th>TCKN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let kullanici of kullanicilar">
+              <td>{{ kullanici.musteriHesapNo }}</td>
+              <td>{{ kullanici.musteriName }}</td>
+              <td>{{ kullanici.musteriSurname }}</td>
+              <td>{{ kullanici.musteriBakiye }}</td>
+              <td>{{ kullanici.musteriAge }}</td>
+              <td>{{ kullanici.musteriTcNo }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <button (click)="goBack()">GERİ DÖN</button>
+  </div> 
+

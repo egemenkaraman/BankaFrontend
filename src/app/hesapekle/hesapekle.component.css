@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #C8102E, #003C71);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    background: linear-gradient(135deg, #C8102E, #003C71);
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-container {
+    background: linear-gradient(to right, #C8102E, #003C71);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background: #003C71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background: #C8102E;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+.home-container button {
+    background-color: #003C71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.home-container button:hover {
+    background-color: #C8102E;
+}
+
+.home-container button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .home-container button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+  

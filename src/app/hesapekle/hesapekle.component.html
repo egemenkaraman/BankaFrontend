@@ -1,0 +1,43 @@
+
+
+<div class="container">
+  <h2>HESAP EKLE</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="musteriHesapNo">HESAP NUMARASI</label>
+      <input id="musteriHesapNo" formControlName="musteriHesapNo" class="form-control" type="number">
+    </div>
+
+    <div class="form-group">
+      <label for="musteriName">İSİM</label>
+      <input id="musteriName" formControlName="musteriName" class="form-control" type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="musteriSurname">SOYİSİM</label>
+      <input id="musteriSurname" formControlName="musteriSurname" class="form-control" type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="musteriBakiye">BAKİYE</label>
+      <input id="musteriBakiye" formControlName="musteriBakiye" class="form-control" type="number">
+    </div>
+
+    <div class="form-group">
+      <label for="musteriAge">YAŞ</label>
+      <input id="musteriAge" formControlName="musteriAge" class="form-control" type="number">
+    </div>
+
+    <div class="form-group">
+      <label for="musteriTcNo">KİMLİK NUMARASI</label>
+      <input id="musteriTcNo" formControlName="musteriTcNo" class="form-control" type="number">
+    </div>
+    <button  type="submit" class="btn btn-primary" >HESAP EKLE</button>
+    <button (click)="goBack()">GERİ DÖN</button>
+
+  </form>
+</div>
+
+
+
+
